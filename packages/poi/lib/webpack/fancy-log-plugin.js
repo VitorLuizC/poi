@@ -7,16 +7,17 @@ const logger = require('../logger')
 const terminal = require('../terminal-utils')
 const handleWebpackErrors = require('./handle-errors')
 
-function outputStats(stats) {
-  console.log(stats.toString({
-    colors: true,
-    chunks: false,
-    modules: false,
-    children: false,
-    version: false,
-    hash: false,
-    timings: false
-  }))
+function outputStats() {
+  // console.log(stats.toString({
+  //   colors: true,
+  //   chunks: false,
+  //   modules: false,
+  //   children: false,
+  //   version: false,
+  //   hash: false,
+  //   timings: false
+  // }))
+  console.log('Build complete.')
 }
 
 module.exports = class FancyLogPlugin {
